@@ -83,10 +83,11 @@ bool enqueue(Queue& q, int nomor) {
         q.belakang->next = baru;
         q.belakang = baru;
     }
-     // TODO: kerjakan di sini
-    return false;
+
+    return true;
 }
 
+     // TODO: kerjakan di sini
 // =============================================================================
 // SOAL 2 — dequeue()                                                  40 poin
 // =============================================================================
