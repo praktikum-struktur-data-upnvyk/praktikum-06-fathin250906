@@ -113,16 +113,19 @@ bool dequeue(Queue& q, int& nomor) {
 // SOAL 3 — clear()                                                    25 poin
 // =============================================================================
 void clear(Queue& q) {
-      Node *current = q.depan;
-    while (current != nullptr)
-    {
-        Node *bantu = current;
+    Node* current = q.depan;
+
+    while (current != NULL) {
+        Node* bantu = current;
         current = current->next;
         delete bantu;
     }
-     inisialisasi(q);
-    // TODO: kerjakan di sini
+
+    inisialisasi(q);
 }
+
+    // TODO: kerjakan di sini
+
 
 // =============================================================================
 // MAIN() — program utama. TIDAK DINILAI, BEBAS DIUBAH.
